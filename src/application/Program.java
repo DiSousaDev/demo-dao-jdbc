@@ -5,6 +5,7 @@ import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
+import javax.swing.*;
 import java.util.Date;
 import java.util.List;
 
@@ -43,6 +44,10 @@ public class Program {
         seller.setEmail("martha@gmail.com");
         sellerDao.update(seller);
         System.out.println("Atualização Completa!");
+
+        System.out.println("====TESTE 4: Seller Delete; ==== ");
+        int id = Integer.parseInt(JOptionPane.showInputDialog("Insira o ID para deletar: "));
+        sellerDao.deleteById(id);
 
     }
 }
