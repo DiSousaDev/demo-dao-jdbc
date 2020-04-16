@@ -9,10 +9,15 @@ public class Program2 {
 
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
-        System.out.println("====TESTE 1: Department find by id; ==== ");
-        Department department = new Department(null,"Baby");
-        departmentDao.insert(department);
-        System.out.println("Inserido com sucesso.");
+        //System.out.println("====TESTE 1: Department find by id; ==== ");
+        //Department department = new Department(null,"Baby");
+        //departmentDao.insert(department);
+        //System.out.println("Inserido com sucesso.");
+
+        System.out.println("====TESTE 2: Department Update; ==== ");
+        Department department1 = new Department(1,"Computador");
+        departmentDao.update(department1);
+        System.out.println("Atualização Completa!");
 
     }
 }
