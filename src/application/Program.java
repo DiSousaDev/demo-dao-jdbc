@@ -37,5 +37,12 @@ public class Program {
         sellerDao.insert(newSeller);
         System.out.println("Inserido com sucesso novo id: " + newSeller.getId());
 
+        System.out.println("====TESTE 4: Seller Update; ==== ");
+        seller = sellerDao.findById(1);
+        seller.setName("Martha Waine");
+        seller.setEmail("martha@gmail.com");
+        sellerDao.update(seller);
+        System.out.println("Atualização Completa!");
+
     }
 }
