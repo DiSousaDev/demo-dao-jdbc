@@ -4,7 +4,6 @@ import db.DB;
 import db.DbException;
 import model.dao.DepartmentDao;
 import model.entities.Department;
-import model.entities.Seller;
 
 import java.sql.*;
 import java.util.ArrayList;
